@@ -1,7 +1,7 @@
 function countWordOccurrences(sentance: string, word: string): number {
   const lower_sentance = sentance.toLowerCase();
   const lower_word = word.toLowerCase();
-  const wordsOfSentance = lower_sentance.split(/\W+/).filter(Boolean); 
+  const wordsOfSentance = lower_sentance.split(" "); 
   console.log(wordsOfSentance); 
   let i:number;
   let countOccurrence:number=0;;
@@ -9,10 +9,8 @@ function countWordOccurrences(sentance: string, word: string): number {
          if(wordsOfSentance[i]===lower_word){
           countOccurrence+=1;
          }
-   }
- console.log(countOccurrence)
- 
+   } 
   return countOccurrence;
 }
 
-console.log(countWordOccurrences("TypeScript is great. I love TypeScript!  TypeScript!", "typescript"));
+countWordOccurrences("I love typescript", "typescript");

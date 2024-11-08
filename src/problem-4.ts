@@ -21,12 +21,9 @@ const  PI:number=3.1416;
 }
 
 
-const Area = calculateShapeArea({ shape: "circle", radius: 5 });
-
-// Sample Input 2:
-// const Area = calculateShapeArea({
-//   shape: "rectangle",
-//   width: 4,
-//   height: 6,
-// });
-console.log(Area)
+const circleArea = calculateShapeArea({ shape: "circle", radius: 5 });
+const rectangleArea = calculateShapeArea({
+  shape: "rectangle",
+  width: 4,
+  height: 6,
+});
