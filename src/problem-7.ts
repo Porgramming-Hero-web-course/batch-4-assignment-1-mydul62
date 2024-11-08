@@ -1,9 +1,9 @@
 class Car{
   constructor(public brand: string, public model: string, public year: number){};
-  getCarAge(): number{
+  getCarAge(): string{
     const currentYear: number = 2024;
    const age= currentYear - this.year;
-   return age;
+   return  `${age} (assuming current year is ${currentYear})`;;
   }
 
 }

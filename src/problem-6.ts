@@ -1,16 +1,16 @@
-interface IMyProfile {
+interface Profile {
   name: string;
   age: number;
   email: string;
 }
 
-const myProfile: IMyProfile = { 
+const profile: Profile = { 
   name: "Alice",
   age: 25,
   email: "alice@example.com"
 };
 
-function updateProfile(myProfile: IMyProfile, updateInfo: Partial<IMyProfile>) {
+function updateProfile(myProfile: Profile, updateInfo: Partial<Profile>) {
   const updatedProfile = {
     ...myProfile,
     ...updateInfo,
@@ -18,4 +18,4 @@ function updateProfile(myProfile: IMyProfile, updateInfo: Partial<IMyProfile>) {
   return updatedProfile;
 }
 
-console.log(updateProfile(myProfile, { age: 26 }));
+console.log(updateProfile(profile, { age: 26 }));

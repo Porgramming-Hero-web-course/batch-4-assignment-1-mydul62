@@ -4,9 +4,9 @@
     age: number;
     email: string;
   };
-  type PersonKeys = keyof Person;
   
-  const person = {
+  
+  const person:Person = {
     name: "Alice",
     age: 25,
     email: "alice@example.com"
