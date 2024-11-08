@@ -24,7 +24,7 @@ sum(true, 100);          // Error: Argument of type 'boolean' is not assignable 
 Intersection types combine two or more types into a single type, which must satisfy all the included types simultaneously.
 
 **Example:**
-```typescript
+
 interface Address {
   street: string;
   city: string;
