@@ -9,8 +9,8 @@ example:
     sum(100,"mahim"); => result is 100mahim
     sum(true,100); => this is invalid
 
-## Significance:
-** Union types allowing values of different types while maintaining type safety.Improved Code Readability. reduce runtime errors and easy to catch error. **
+#Significance:
+Union types allowing values of different types while maintaining type safety.Improved Code Readability. reduce runtime errors and easy to catch error.
 
 ## 2. Intersection Types ( & )
    Intersection types combine two or more types into a single type, which must satisfy all the included types simultaneously.
@@ -35,5 +35,5 @@ example:
   
   here two interface are combined in one type.
   
-## Significance:
+#Significance:
    Intersection  combine two or more types into a single type.Improved Code Readability. reduce runtime errors and easy to catch error.When we need a composite type that merges properties from multiple types or interfaces then we use intersection(&).
