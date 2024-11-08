@@ -3,4 +3,4 @@ function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
 }
 
 const person = { name: "Alice", age: 30 };
-getProperty(person, "name"); 
+console.log(getProperty(person, "name")); 

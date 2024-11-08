@@ -12,11 +12,11 @@
     email: "alice@example.com"
   };
   
-  function validateKeys<T extends object, K extends keyof T>(obj: T, keys: K[]): boolean {
-    return keys.every((key) => key in obj);
+  function validateKeys<T extends object, K extends keyof T>(personObj: T, keys: K[]): boolean {
+    return keys.every((key) => key in personObj);
   }
   
- validateKeys(person, ["name", "age"]); 
+console.log( validateKeys(person, ["name", "age"])); 
   
 
 }

@@ -8,5 +8,5 @@ class Car{
 
 }
  
-const car = new Car("Honda", "Civic", 2019);
-car.getCarAge();
+const car = new Car("Honda", "Civic", 2018);
+console.log(car.getCarAge());

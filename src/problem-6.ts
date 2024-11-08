@@ -18,4 +18,4 @@ function updateProfile(myProfile: IMyProfile, updateInfo: Partial<IMyProfile>) {
   return updatedProfile;
 }
 
-updateProfile(myProfile, { age: 28,name: "mahim"});
+console.log(updateProfile(myProfile, { age: 26 }));
