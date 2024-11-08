@@ -1,15 +1,15 @@
-
 ## 1. Union Types (`|`)
 Union types allow a variable to be one of multiple specified types. When a function parameter or variable can hold multiple types, union types provide a clear way to handle this.
 
 **Example:**
+```typescript
 function sum(a: string | number, b: number | string) {
   console.log("Result is: " + (a + b));
 }
 
-sum(100, 100);          => Result is: 200
-sum(100, "mahim");      => Result is: 100mahim
-sum(true, 100);         => Error: Argument of type 'boolean' is not assignable to parameter of type 'string | number'
+sum(100, 100);           // Result is: 200
+sum(100, "mahim");       // Result is: 100mahim
+sum(true, 100);          // Error: Argument of type 'boolean' is not assignable to parameter of type 'string | number'
 
 **Significance:**
 
@@ -24,7 +24,7 @@ sum(true, 100);         => Error: Argument of type 'boolean' is not assignable t
 Intersection types combine two or more types into a single type, which must satisfy all the included types simultaneously.
 
 **Example:**
-
+```typescript
 interface Address {
   street: string;
   city: string;
