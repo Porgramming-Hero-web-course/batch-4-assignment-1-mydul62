@@ -1,15 +1,15 @@
 
-interface IRectangle{
+type Rectangle={
   shape:'rectangle';
   height:number;
   width:number;
 }
-interface ICircle{
+type Circle={
   shape:"circle";
   radius:number
 }
 
-type Shape = IRectangle | ICircle;
+type Shape = Rectangle | Circle;
 
 function calculateShapeArea(shape:Shape):number{
 const  PI:number=3.1416;
